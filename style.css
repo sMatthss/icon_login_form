@@ -1,0 +1,163 @@
+/* Configurações Globais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Uma fonte clean similar à da imagem */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #bd27e6; /* O roxo vibrante do fundo */
+}
+
+/* Container Branco do Formulário */
+.login-container {
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 320px; /* Largura aproximada da imagem */
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Botões de Login Social */
+.social-login {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-login button {
+    flex: 1; /* Divide o espaço igualmente */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* Espaço entre ícone e texto */
+    transition: opacity 0.2s;
+}
+
+.social-login button:hover {
+    opacity: 0.9;
+}
+
+.btn-facebook {
+    background-color: #3b5998; /* Azul Facebook */
+}
+
+.btn-twitter {
+    background-color: #1da1f2; /* Azul Twitter */
+}
+
+/* Campos de Input com Ícones */
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999; /* Cor cinza dos ícones */
+    font-size: 16px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 40px; /* Padding extra à esquerda para o ícone */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #bd27e6; /* Borda roxa ao focar */
+}
+
+/* Opções (Remember me e Forgot password) */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.remember-me input {
+    accent-color: #bd27e6; /* Cor do checkbox quando marcado */
+    cursor: pointer;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #bd27e6; /* Cor roxa do link */
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Botão de Login Principal */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #bd27e6; /* Roxo principal */
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.2s;
+}
+
+.btn-login:hover {
+    background-color: #a01fc4;
+}
+
+/* Link de Signup no final */
+.signup-link {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+}
+
+.signup-link a {
+    text-decoration: none;
+    color: #bd27e6; /* Cor roxa do link */
+    font-weight: 500;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
